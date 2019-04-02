@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nyan-cat</title>
+<style>
+body{background-image:url("ny2.png");}
+#btn {
+  margin:500px;
+  margin-left:600px;
+  background-color:rgb(220, 27, 197); /* Green */
+  border: none;
+  color:rgb(13, 250, 235);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-weight:bold;
+}
+.container{
+  width: 1000px; ;
+  height:400px;
+  position: relative;
+}
+#cat{
+  position: absolute;
+  height="130px";
+  width="auto";
+}
+
+</style>
+</head>
+<body>
+
+
+<div id="btn"  onclick="myFunction()">flying cat's</div>
+  <div class="container">
+      <div id="cat">
+      </div>
+  </div>
+
+
+
+
+<script>
+  var cat = document.getElementById("cat")
+  var btn = document.getElementById("btn")
+
+
+  btn.addEventListener("click",myFunction)
+  
+  var image = document.createElement('image');
+  image.src = "pica.png";
+  cat.appendChild(img);
+  width : "500px"; 
+  height : "200px";
+
+function myFunction(){
+  
+  
+
+}
+
+
+  //function myfunction{
+  //var kat = document.getElementById("cat");
+
+
+ //document.getElementById("btn").addEventListener("click",myfunction)
+ //function myfunction{
+ // var kat = document.getElementById("cat");
+ // kat pos = 0
+ // kat = setInterval(frame,10);
+ //   function frame(){
+ //   if (pos == 350){
+ //     clearInterval(kat);
+ //   }
+ //   else{
+ //     pos++;
+ //     kat.style.top = pos + "0px" ;
+ //     kat.style.left  = pos + "250px" ;
+ //   }
+ //   }
+ // }
+
+
+  //adding immages in js 
+
+  // appending to parent /
+
+ 
+//if btn 
+//onclick display or create  kat 
+// fly from top left to bottom right
+// for 10 secconds and remove kat
+//else remove kat 
+</script>
+</body>
+</html>
