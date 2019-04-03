@@ -17,83 +17,25 @@ body{background-image:url("ny2.png");}
   font-size: 22px;
   font-weight:bold;
 }
-.container{
-  width: 1000px; ;
-  height:400px;
-  position: relative;
-}
-#cat{
-  position: absolute;
-  height="130px";
-  width="auto";
-}
-
 </style>
 </head>
 <body>
 
 
-<div id="btn"  click="myFunction()">flying cat's</div>
-  <div class="container">
-      <div id="cat">
+  <button id="btn">flying cat's
+  </button>
 
-      </div>
-  </div>
-
-
-
-
-<script>
-  var cat = document.getElementById("cat")
-  var btn = document.getElementById("btn")
-
-
-  btn.addEventListener("click",myFunction)
-  
-  
+<script type="text/javascript">
+  var btn = document.getElementById("btn");
+  btn.addEventListener("click",myFunction);
 function myFunction(){
-  var image = document.createElement('image');
-  image.src = "pica.png";
-  image.setAttribute('height','500 px');
-  image.setAttribute('width','auto');
-  document.body.container.cat.appendChild(image); 
-
-
+  var image = document.createElement('img');
+  image.src ="nyan.png";
+  image.style.height=(250);
+  image.style.width=(400);
+  image.style.position='absolute';
+  document.body.appendChild(image);
 }
-
-
-  //function myfunction{
-  //var kat = document.getElementById("cat");
-
-
- //document.getElementById("btn").addEventListener("click",myfunction)
- //function myfunction{
- // var kat = document.getElementById("cat");
- // kat pos = 0
- // kat = setInterval(frame,10);
- //   function frame(){
- //   if (pos == 350){
- //     clearInterval(kat);
- //   }
- //   else{
- //     pos++;
- //     kat.style.top = pos + "0px" ;
- //     kat.style.left  = pos + "250px" ;
- //   }
- //   }
- // }
-
-
-  //adding immages in js 
-
-  // appending to parent /
-
- 
-//if btn 
-//onclick display or create  kat 
-// fly from top left to bottom right
-// for 10 secconds and remove kat
-//else remove kat 
 </script>
 </body>
 </html>
