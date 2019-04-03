@@ -3,9 +3,28 @@
 <head>
 <title>Nyan-cat</title>
 <style>
-body{background-image:url("ny2.png");}
+body{
+  position: relative;
+  background-image:url("ny2.png");
+  height:100vh;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: animate 15s linear infinite;
+}
+@keyframes animate
+{
+from
+{
+background-position: 0 0;
+}
+to
+{
+  background-position: 100% 0;
+}
+}
 #btn {
-  margin:500px;
+  margin-top:500px;
   margin-left:600px;
   background-color:rgb(220, 27, 197); /* Green */
   border: none;
@@ -33,9 +52,15 @@ function myFunction(){
   image.src ="nyan.png";
   image.style.height=(250);
   image.style.width=(400);
-  image.style.position='absolute';
+  image.style.position.top="10px";
+  image.style.position.left="100px";
   document.body.appendChild(image);
 }
+//loop of nen multiplyer
+//
+//
+//
+//
 </script>
 </body>
 </html>
