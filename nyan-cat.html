@@ -7,7 +7,7 @@ body{
   position: relative;
   background-image:url("ny2.png");
   height:100vh;
-  background-size: cover;
+  background-size: 70% ;
   background-position: 0 0;
   background-repeat: repeat-x;
   animation: animate 15s linear infinite;
@@ -36,13 +36,15 @@ to
   font-size: 22px;
   font-weight:bold;
 }
+#container{position:relative;}
 </style>
 </head>
 <body>
 
-
-  <button id="btn">flying cat's
-  </button>
+  <div id="container">
+    <button id="btn">flying cat's
+    </button>
+  </div>
 
 <script type="text/javascript">
   var btn = document.getElementById("btn");
@@ -52,11 +54,30 @@ function myFunction(){
   image.src ="nyan.png";
   image.style.height=(250);
   image.style.width=(400);
+  image.style.position="absolute";
   image.style.position.top="10px";
   image.style.position.left="100px";
   document.body.appendChild(image);
+  
+  console.log(myMove);
+  btn.addEventListener("click",myMove);
+  function myMove() {
+  var elem = document.getElementsByTagName("img");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
 }
-//loop of nen multiplyer
+}
+//loop of 
+//multiplyer???
 //
 //
 //
